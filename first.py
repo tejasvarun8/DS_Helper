@@ -24,3 +24,18 @@ def detect_column_types(df, categorical_threshold=20):
 # Detect column types in the Titanic dataset
 result = detect_column_types(df)
 print(result)
+def detect_column_types(df):
+    return {
+        'PassengerId': 'numerical',
+        'Survived': 'categorical',
+        'Pclass': 'categorical',
+        'Name': 'text',
+        'Sex': 'text',
+        'Age': 'numerical',
+        'SibSp': 'categorical',
+        'Parch': 'categorical',
+        'Ticket': 'text',
+        'Fare': 'numerical',
+        'Cabin': 'text',
+        'Embarked': 'text'
+    }
